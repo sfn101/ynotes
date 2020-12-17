@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="form-bg">
+        <form class="my-form">
+          <h2 id="sing">add note</h2>
+          <input
+            required
+            type="text"
+            name="name"
+            id="my-name"
+            placeholder="your name"
+          />
+          <textarea name="note" id="text-here"> text here ...</textarea>
+          <button type="submit">add</button>
+          <span id="new"></span>
+        </form>
+        <button id="show">show/hide notes</button>
+        <!-- <div class="feedback"></div> -->
+      </div>
+      <div class="list-bg">
+        <ul></ul>
+      </div>
+    </div>
+    <!-- <script src="calc.js"></script> -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyB0XgQCZsBBC1eSlxMCO4xQYjEXG8ygGuk",
+        authDomain: "double-note.firebaseapp.com",
+        projectId: "double-note",
+        storageBucket: "double-note.appspot.com",
+        messagingSenderId: "521359586739",
+        appId: "1:521359586739:web:f71f1a930bdfe8bf7a07c6",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

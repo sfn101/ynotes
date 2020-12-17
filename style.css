@@ -1,0 +1,156 @@
+body {
+  background-color: rgba(138, 43, 226, 30);
+}
+
+body::before {
+  content: " ";
+  background-image: url(img/yu.png);
+  background-size: cover;
+  background-attachment: fixed;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 0.75;
+}
+
+input {
+  margin: 5px;
+  border: 1px solid grey;
+  height: 30px;
+  width: 85%;
+  background-color: gainsboro;
+  border-radius: 5px;
+  color: blueviolet;
+  box-sizing: border-box;
+}
+#text-here {
+  width: 85%;
+  height: 80px;
+  resize: none;
+  margin: 5px;
+}
+#user-active {
+  width: 30px;
+}
+
+label {
+  margin: 0px 10px;
+  color: darkslategray;
+  font-size: 24px;
+  font-weight: bold;
+}
+input:focus {
+  outline-color: blueviolet;
+}
+
+button:focus {
+  outline-color: blueviolet;
+}
+button.delete:focus {
+  outline-color: red;
+}
+
+button {
+  height: 30px;
+  display: block;
+  width: 60%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  color: darkslategray;
+  font-weight: bold;
+  margin: auto;
+}
+button.delete {
+  background-color: Crimson;
+  color: antiquewhite;
+  width: 70px;
+  border-color: antiquewhite;
+  margin: 10px 5px;
+}
+.wrap {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-bg {
+  width: 50%;
+  min-width: 220px;
+  background-color: aliceblue;
+  padding: 10px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.list-bg {
+  margin-top: 10px;
+  width: 50%;
+  min-width: 220px;
+  background-color: aliceblue;
+  padding: 10px;
+  min-height: 50px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+ul {
+  display: block;
+  width: 100%;
+  padding: 1px;
+  margin: 0px;
+}
+
+li {
+  margin: 0px 10px;
+  color: darkslategray;
+  font-size: 18px;
+  font-weight: 700;
+  border: 2px solid gray;
+  padding: 5px;
+  margin: 0px;
+  margin-top: 3px;
+  list-style: none;
+}
+
+.my-form {
+  margin: 10px;
+}
+
+#sing {
+  margin: 0px 10px;
+  color: darkslategray;
+}
+
+#show {
+  background-color: greenyellow;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.feedback {
+  padding: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+@media (min-width: 725px) {
+  .form-bg {
+    width: 20%;
+  }
+  .list-bg {
+    width: 20%;
+  }
+}
